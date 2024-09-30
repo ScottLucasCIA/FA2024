@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+
+    <style type="text/css">
+
+        /* class example */
+        .example-block {
+            background-color:beige;
+        }
+        /* ID example */
+        #anID {
+            color:red;
+        }
+
+        em {
+            background-color: aqua;
+        }
+        th {
+            background-color:#dadada;
+        }
+        td {
+            background-color: #999;
+        }
+
+        .box-example {
+            padding:30px;
+            border: 2px solid blue;
+            margin:30px;
+            display:inline-block;
+            width: 200px;
+        }
+
+        /* example position:relative */
+        .nav {
+            list-style-type:none;
+            position:relative;
+            top:40px;
+            left:30px;
+        }
+        .nav li {
+            text-align:center;
+            display:inline-block;
+            width: 100px;
+            padding:20px;
+            background-color:#0f0;
+            margin:5px;
+        }
+
+        /* example position:fixed */
+        .fixedEl {
+            position:fixed;
+            background-color: pink;
+            width:100px;
+            height:50px;
+            bottom:0;
+            left:0;
+
+            z-index: 1000;
+        }
+
+        /* example position:absolute */
+        .relativeBox {
+            background-color: #777;
+            width:500px;
+            height:200px;
+            position:relative;
+        }
+
+        .absoluteBox {
+            position: absolute;
+            bottom:20px;
+            right:12px;
+            background-color:black;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* example float */
+        .left, .middle, .right {
+            float:left;
+            margin-right:20px;
+            padding:10px;
+        }
+
+        .left {background-color:red;}
+        .middle{background-color:green;}
+        .right{background-color:blue;}
+    
+    </style>
+
+</head>
+<body>
+    <h1 id="anID">Main Heading</h1>
+    <p class="example-block">Some text here <img style="width:180px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Seal_of_the_Central_Intelligence_Agency.svg/800px-Seal_of_the_Central_Intelligence_Agency.svg.png" alt="CIA logo"></p>
+
+    <!-- This is an HTML comment, below is a bulleted list -->
+    <ul>
+        <li>Bullet <em>with emphasis</em> 1</li>
+        <li>Bullet 2 <a href="https://cia.edu">CIA (the other one)</a></li>
+    </ul>
+    <ol>
+        <li>a numbered list</li>
+        <li>with two items</li>
+    </ol>
+
+    <form method="GET" action="#">
+        <label for="search">Search</label>
+        <input type="text" value="" placeholder="Type here" name="search" id="search" required>
+        
+        <label for="numbered">Number input</label>
+        <input type="number" name="number-field" id="numbered">
+
+        <label for="password">Password</label>
+        <input type="password" name="pass" id="password">
+
+        <br>
+
+        <select name="select-field">
+            <option value="1">Option 1</option>
+            <option value="2" selected>Option 2</option>
+        </select>
+
+        <br>
+
+        <textarea name="big-text" cols="100" rows="15">
+            Here's some text
+        </textarea>
+
+        <input type="radio" name="colors" value="red">Red
+        <input type="radio" name="colors" value="blue">Blue
+
+        <br>
+
+        <input type="checkbox" name="checks" value="1">Check 1
+        <input type="checkbox" name="checks" value="2">Check 2
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <p>Here is <em>an em</em> and here are <i>italics</i>, here is a <strong>strong</strong> and here is a <b>bold</b>.</p>
+
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>CSS Stuff</h2>
+
+    <div class="box-example">
+        Some content
+    </div>
+
+    <div class="box-example">
+        Second content
+    </div>
+
+    <ul class="nav">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact</li>
+    </ul>
+
+    <div class="fixedEl">
+        FIXED
+    </div>
+
+    <div class="relativeBox">
+        <div class="absoluteBox"></div>
+    </div>
+
+    <div class="left">LEFT</div>
+
+    <div class="middle">MIDDLE</div>
+
+    <div class="right">RIGHT</div>
+
+    <div class="left">LEFT</div>
+
+    <div class="middle">MIDDLE</div>
+
+    <div class="right">RIGHT</div>
+
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>
